@@ -19,18 +19,18 @@ scroll-behavior:smooth;
 
 :root{
 --primary:#c79a5c;
---dark:#0f1115;
---secondary:#171a21;
---card:#1c212b;
---text:#ffffff;
---gray:#b0b0b0;
+--dark:#f7f7f5;
+--secondary:#ffffff;
+--card:#ffffff;
+--text:#111111;
+--gray:#666666;
 --gradient:linear-gradient(135deg,#c79a5c,#f0c27b);
 }
 
 body{
 font-family:'Montserrat',sans-serif;
-background:var(--dark);
-color:var(--text);
+background:#f7f7f5;
+color:#111111;
 overflow-x:hidden;
 }
 
@@ -52,10 +52,10 @@ padding:20px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:rgba(0,0,0,0.55);
+background:rgba(255,255,255,0.88);
 backdrop-filter:blur(12px);
 z-index:1000;
-border-bottom:1px solid rgba(255,255,255,0.08);
+border-bottom:1px solid rgba(0,0,0,0.06);
 }
 
 .logo{
@@ -87,8 +87,7 @@ color:var(--primary);
 
 .hero{
 height:100vh;
-background:
-linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.8)),
+background:linear-gradient(rgba(255,255,255,0.72),rgba(255,255,255,0.82)),
 url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1600&auto=format&fit=crop');
 background-size:cover;
 background-position:center;
@@ -102,8 +101,8 @@ max-width:760px;
 }
 
 .hero-tag{
-background:rgba(255,255,255,0.08);
-border:1px solid rgba(255,255,255,0.08);
+background:rgba(255,255,255,0.75);
+border:1px solid rgba(0,0,0,0.06);
 display:inline-block;
 padding:12px 20px;
 border-radius:50px;
@@ -124,7 +123,7 @@ color:var(--primary);
 }
 
 .hero p{
-color:#d2d2d2;
+color:#444444;
 line-height:1.9;
 font-size:1.08rem;
 margin-bottom:40px;
@@ -174,11 +173,11 @@ flex-wrap:wrap;
 }
 
 .stat-card{
-background:rgba(255,255,255,0.08);
+background:rgba(255,255,255,0.75);
 padding:20px 28px;
 border-radius:22px;
 backdrop-filter:blur(10px);
-border:1px solid rgba(255,255,255,0.08);
+border:1px solid rgba(0,0,0,0.06);
 min-width:180px;
 }
 
@@ -232,7 +231,7 @@ margin-bottom:25px;
 }
 
 .about-content p{
-color:#c9c9c9;
+color:#555555;
 line-height:1.9;
 margin-bottom:20px;
 }
@@ -248,7 +247,7 @@ background:var(--card);
 border-radius:28px;
 overflow:hidden;
 transition:0.4s;
-border:1px solid rgba(255,255,255,0.05);
+border:1px solid rgba(0,0,0,0.05);
 }
 
 .product-card:hover{
@@ -290,7 +289,7 @@ transition:0.4s;
 
 .feature-card:hover{
 transform:translateY(-8px);
-background:#202530;
+background:#f3f3f3;
 }
 
 .feature-card h3{
@@ -300,7 +299,7 @@ color:var(--primary);
 
 .feature-card p{
 line-height:1.8;
-color:#c2c2c2;
+color:#555555;
 }
 
 .gallery-grid{
@@ -322,7 +321,7 @@ transform:scale(1.03);
 }
 
 .review-section{
-background:linear-gradient(180deg,#171a21,#0f1115);
+background:linear-gradient(180deg,#ffffff,#f4f4f4);
 }
 
 .review-grid{
@@ -347,7 +346,7 @@ font-size:1.2rem;
 
 .review-card p{
 line-height:1.8;
-color:#ddd;
+color:#444444;
 }
 
 .review-card h4{
@@ -376,7 +375,7 @@ margin-bottom:25px;
 .contact-card p{
 margin-bottom:18px;
 line-height:1.8;
-color:#d0d0d0;
+color:#555555;
 }
 
 .contact-form form{
@@ -388,7 +387,7 @@ gap:20px;
 .contact-form input,
 .contact-form textarea{
 padding:16px 18px;
-background:#262b35;
+background:#f1f1f1;
 border:none;
 border-radius:14px;
 color:white;
@@ -403,12 +402,12 @@ resize:none;
 footer{
 padding:40px 8%;
 text-align:center;
-background:#0a0c10;
-border-top:1px solid rgba(255,255,255,0.06);
+background:#ffffff;
+border-top:1px solid rgba(0,0,0,0.06);
 }
 
 footer p{
-color:#8f8f8f;
+color:#666666;
 }
 
 .whatsapp{
@@ -552,7 +551,7 @@ Handore Enterprises specializes in premium French doors, modern hardware fitting
 
 <div class="about-grid">
 <div class="about-image">
-<img src="https://res.cloudinary.com/dwvccledv/image/upload/q_auto/f_auto/v1779355881/8a761f72-e29c-48fe-8043-2b0833c2f1d8_oix8w0.png">
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1400&auto=format&fit=crop" alt="Luxury Door">
 </div>
 
 <div class="about-content">
@@ -728,7 +727,7 @@ WRMF+XR Nashik, Maharashtra
 <script>
 window.addEventListener('scroll',()=>{
 const navbar=document.querySelector('.navbar');
-navbar.style.background=window.scrollY>50?'rgba(0,0,0,0.92)':'rgba(0,0,0,0.55)';
+navbar.style.background=window.scrollY>50?'rgba(255,255,255,0.96)':'rgba(255,255,255,0.88)';
 });
 </script>
 
